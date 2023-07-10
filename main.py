@@ -34,7 +34,7 @@ async def sendWiki(message: types.Message):
         respond = wikipedia.summary(message.text)
         await message.answer(respond)
     except:
-        await message.answer("....natija topilmadi❌")
-
+        await message.answer("...natija topilmadi❌")
+"""run  main"""
 if __name__ == '__main__':
     executor.start_polling(dp, skip_updates=True)
